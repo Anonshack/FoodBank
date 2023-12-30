@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="text/html" href="https://i.pinimg.com/564x/5a/63/50/5a635014b4b22bc92150fbbf63ecd680.jpg" class="rounded-circle logo border-box"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Food Bank">
+    <meta name="author" content="Mahmudul Alam">
+
+    <title>{% block title %}FoodBank {% endblock title %}</title>
+    {% include 'partials/_styles.html' %}
+</head>
+
+<body>
+    {% include 'partials/_navbar.html' %}
+
+    <div class="container">
+        {% block content %}{% endblock content %}
+        {% block widgets %}{% include 'partials/_widgets.html' %}{% endblock widgets %}
+    </div>
+    {% include 'partials/_footer.html' %}
